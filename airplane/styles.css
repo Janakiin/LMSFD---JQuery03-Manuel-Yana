@@ -11,6 +11,8 @@ body
 	color: #333; 
 	background-color: #fff;
 	position: relative;
+	background-image: url('background.jpg');
+	background-size: cover;
 }
 
 header, article, footer, section
@@ -83,4 +85,10 @@ article {
 #moveme {
 
 	position: absolute;
+}
+
+#stardest{
+	position: absolute;
+	margin-left: 55%;
+	display: none;
 }
