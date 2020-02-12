@@ -1,0 +1,33 @@
+body {
+	background: lightskyblue;
+}
+
+input{
+	width: 200px;
+	height: 20px;
+	padding: 5px;
+	margin: 0;
+}
+
+.check{
+	width: 30px;
+	margin: 5px;
+}
+
+button {
+	height: 35px;
+	padding: 5px;
+	width: 35px;
+}
+
+#todos{
+	margin: 20px;
+	padding: 10px;
+}
+
+label{
+	background: white;
+	width: 200px;
+	height: 25px;
+	padding: 5px;
+}

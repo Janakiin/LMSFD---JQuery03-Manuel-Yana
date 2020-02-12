@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo-list</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="basic.css">
+</head>
+<body>
+	<div class="container">
+		<center>
+			<h1>My to-do list</h1>
+			<input id="createInput" type="text" name="new input" placeholder="New entry">
+			<button id="newEntry">+</button>
+			<div id="todos">
+				
+			</div>
+		</center>
+	</div>
+
+	<script>
+
+		// Press button(#newEntry) ---> it creates a new input with checkbox
+  //                                    gives the value of input(#createInput) 											to input(.newinput)
+  //                                    changes the value of 	input(#createInput) 
+
+		$("#newEntry").click(function(){
+
+			var a = `
+				
+				<input class="newInput" type="text" name="first" placeholder="${$("#createInput").val()}">
+				<br>
+				
+				`;
+
+			//var b = a.fadeIn(3000)	
+
+			$("#todos").append(a).val("");
+	
+			$("#createInput").val('');
+
+			$(".newInput").fadeIn(1000);
+
+			$(".newEntry").on("click", function() {
+                $(this).fadeOut(1000)
+            });
+
+		});
+
+	
+	</script>
+	
+</body>
+</html>
